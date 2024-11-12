@@ -1,0 +1,168 @@
+* {
+margin : 0;
+padding : 0;
+box-sizing : border-box;
+}
+html,body {
+width: 100%;
+height: 100%;
+}  
+  header {
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+ 
+
+  }
+  
+  /* Logo Styles */
+  .logo a>img {
+    
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 15%;
+    text-decoration: none;
+  }
+  
+  /* Centered Navigation Links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links li a:hover {
+    color: #ddd;
+  }
+  
+  /* Right Buttons Section */
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-buttons a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-buttons .btn {
+    background-color: #555;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .nav-buttons .btn:hover {
+    background-color: #777;
+  }
+  
+  /* Icon Styles (Moon, Notification) */
+  .nav-buttons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design - Breakpoints */
+  
+  /* Mobile Screens (up to 767px) */
+  @media (max-width: 767px) {
+    .navbar {
+      
+      align-items: flex-start;
+      padding: 1rem;
+    }
+    .logo a>img{
+        width: 40%;
+        
+    }
+  
+    .nav-links {
+      display: none; /* Hide the links initially on mobile */
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .nav-links li {
+      text-align: left;
+      padding: 0.5rem 0;
+    }
+  
+    .nav-buttons {
+ 
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+  
+    .nav-buttons .btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar.open .nav-links {
+      display: flex; /* Display links when menu is open */
+    }
+  }
+  
+  /* Tablet Screens (768px to 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+  
+    .nav-buttons {
+      gap: 0.8rem;
+    }
+  
+    .nav-buttons .btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Desktop Screens (1024px and above) */
+  @media (min-width: 1024px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+  
+    .nav-buttons {
+      gap: 1rem;
+    }
+  
+    .nav-buttons .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
+  
