@@ -6,26 +6,44 @@ box-sizing : border-box;
 html,body {
 width: 100%;
 height: 100%;
+background-color: #1B1B1B;
+color: white;
 }  
+
+/* !!!  some Utility classes */
+
+.container{
+  max-width: 1180px;
+  margin-inline: auto;
+  font-weight: 700;
+  border: 1px solid white;
+}
+
+/* !!!!!!header start here ========================================> */
+
+
   header {
     background-color: #333;
     padding: 0.5rem 1rem;
     color: #fff;
-    
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1), 
+    0 6px 20px rgba(0, 0, 0, 0.4);
   }
-  
-  /* Navbar Styles */
+  .hamburger{
+    display: none;
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
- 
+   
 
   }
   
-  /* Logo Styles */
+
   .logo a>img {
     
     font-size: 1.8rem;
@@ -34,7 +52,7 @@ height: 100%;
     text-decoration: none;
   }
   
-  /* Centered Navigation Links */
+ 
   .nav-links {
     display: flex;
     list-style: none;
@@ -51,7 +69,7 @@ height: 100%;
     color: #ddd;
   }
   
-  /* Right Buttons Section */
+ 
   .nav-buttons {
     display: flex;
     align-items: center;
@@ -74,13 +92,68 @@ height: 100%;
     background-color: #777;
   }
   
-  /* Icon Styles (Moon, Notification) */
+  
   .nav-buttons i {
     font-size: 1.5rem;
     cursor: pointer;
   }
   
-  /* Responsive Design - Breakpoints */
+/* ==================================================================> */
+
+.hero-section{
+  padding-top: 15vh;
+}
+/* Hero Section Styling */
+.hero-section-content {
+    /* background-color: #000;  Black background */
+    color: #fff;  /* White text color for contrast */
+    text-align: center;  /* Center-align the content */
+    padding: 50px 20px;  /* Add padding for spacing */
+}
+
+/* Styling the heading */
+.hero-section-content h2 {
+    font-size: 4em;  /* Large font size */
+  font-weight: 900;
+    font-weight: bold;  /* Make headings bold */
+    line-height: 1.4;
+}
+
+/* Styling the paragraph */
+.hero-section-content p {
+    font-size: 1.2em;
+    margin: 20px 0;  /* Space above and below the paragraph */
+    line-height: 1.6;
+    
+}
+
+/* Button Styling */
+.hero-section-content .btn {
+    background-color: #007BFF;  /* Blue background for buttons */
+    color: #fff;  /* White text color */
+    border: none;  /* Remove default border */
+    padding: 12px 30px;  /* Add padding */
+    margin: 10px;  /* Space between buttons */
+    font-size: 16px;
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
+}
+
+/* Button Hover Effect */
+.hero-section-content .btn:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Styling the additional paragraph */
+.hero-section-content p:last-of-type {
+    font-size: 16px;
+    font-weight: normal;
+    color: #ccc;  /* Light grey for the small text */
+    margin-top: 20px;
+}
+
+
   
   /* Mobile Screens (up to 767px) */
   @media (max-width: 767px) {
@@ -93,6 +166,14 @@ height: 100%;
         width: 40%;
         
     }
+  .nav-buttons a>i{
+    display: none;
+  }  
+  .hamburger{
+    display: inline-block;
+   
+  }
+
   
     .nav-links {
       display: none; /* Hide the links initially on mobile */
@@ -120,6 +201,16 @@ height: 100%;
     .navbar.open .nav-links {
       display: flex; /* Display links when menu is open */
     }
+
+
+    /* !!!======================> */
+    .hero-section-content h2 {
+      font-size: 2em;
+      font-size: 900;
+    }
+    .hero-section-content p {
+      font-size: 0.9em;
+    }
   }
   
   /* Tablet Screens (768px to 1023px) */
@@ -127,8 +218,9 @@ height: 100%;
     .navbar {
       flex-direction: row;
       justify-content: space-between;
+      
     }
-  
+   
     .nav-links {
       display: flex;
       gap: 1.5rem;
