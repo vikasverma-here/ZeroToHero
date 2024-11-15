@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;  /* Black background for the entire page */
+    color: white;  /* White text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.payment-container {
+    display: flex;
+    background-color: white;  /* White background for the payment form */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.payment-image img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.payment-form {
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.payment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-form label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.payment-form .submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.payment-form .submit-button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .payment-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-image img {
+        max-width: 100%;
+    }
+
+    .payment-form {
+        width: 90%;
+    }
+}

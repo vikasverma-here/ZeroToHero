@@ -104,6 +104,32 @@ body {
     border-radius: 50px;
 
 }
+.resource-item h3{
+   font-size: 1.5em;
+   font-weight: 800;
+   color: #45a049;
+   padding-bottom: 2vh;
+
+}
+.resource-item p {
+  padding-bottom: 2vh;
+
+}
+.resource-item a {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color:#45a049;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
 /* Responsive Breakpoints */
 
 /* Large screens - 1200px and above */
@@ -139,7 +165,16 @@ body {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+    .overlay .content h1{
+        font-size: 3em;
+        color:#45a049;
+        font-weight: 900;
+       
+    }
+    .overlay .content p{
+        font-size: 1.3em;
+
+    }
     .content h1 {
         font-size: 1.8rem;
     }

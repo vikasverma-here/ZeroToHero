@@ -1,10 +1,360 @@
 * {
-margin : 0;
-padding : 0;
-box-sizing : border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Landing Page Overlay */
+  .overlay {
+    background: url('../Assets/resource-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+ .content h1 {
+    font-size: 5rem;  /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color:#28a745;
+  }
+  
+ .content p {
+    font-size: 2rem;  /* Larger font size */
+    margin-bottom: 2rem;
+    font-weight: 300;
+    
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 0.4rem 0 0 0.4rem;
+    font-size: 1.2rem;
+    outline: none;
+    width: 450px;
+  }
+  
+  .search-button {
+    padding: 1.5rem 2rem;
+    background-color:#28a745;
+    color: #fff;
+    border: none;
+    border-radius: 0 0.4rem 0.4rem 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color:#218838;
+  }
+  
+
+
+/* !!!!!======================================================> */
+h1 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 3vh;
+    color: #28a745;
+  }
+  
+  .course-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .course-card {
+    background-color: black;
+    border-radius: 10px;
+   
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5);
+  }
+  
+  .course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  .course-card h3 {
+   color:#007bff;
+   margin-bottom:5px;
+  }
+  
+  .course-details {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+ 
+  .buyers, .seats, .status {
+    /* display: block; */
+    margin: 10px 3px;
+     font-weight: 600;
+  }
+  .buyers{
+    color: #007bff;
+   
+  }
+  .seats{
+    color: #28a745;
+  }
+  .status {
+    font-weight: bold;
+    color: red;
+    border: 1px solid red;
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .rating {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #f39c12;
+  }
+  
+  .instructor {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .instructor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .instructor-info {
+    text-align: left;
+  }
+  
+  .instructor-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .instructor-qualification {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .add-to-cart, .buy-now {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart:hover, .buy-now:hover {
+    background-color: #218838;
+  }
+  
+  .buy-now {
+    background-color: #007bff;
+    margin-left: 10px;
+  }
+  
+  .buy-now:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 4.5rem;
+    }
+  
+    p {
+      font-size: 1.8rem;
+    }
+  
+    .search-input {
+      width: 400px;
+    }
+  
+    .search-button {
+      padding: 1.3rem 1.8rem;
+    }
+    /* !!!!!!======> */
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .course-grid{
+        padding: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .overlay::before {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  
+    .search-input {
+      width: 80%;
+      padding: 1.2rem;
+      font-size: 1.1rem;
+    }
+  
+    .search-button {
+      padding: 1.2rem;
+      font-size: 1.1rem;
+    }
+    /* !!!!!!!!!!==================> */
+    .course-grid {
+        grid-template-columns: 1fr;
+      }
+    
+      h1 {
+        font-size: 3rem;
+       
+        
+      }
+    
+      .course-card {
+        padding: 15px;
+      }
+    
+      .instructor img {
+        width: 40px;
+        height: 40px;
+      }
+    
+      .instructor-name {
+        font-size: 1rem;
+      }
+    
+      .instructor-qualification {
+        font-size: 0.8rem;
+      }
+    
+      .add-to-cart, .buy-now {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+      }
+      .course-grid{
+        padding: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   .course-container h1 {
+        font-size: 3rem;
+        border-bottom: 4px solid green;
+        padding-bottom: 10px;
+        
+      }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    .search-input {
+      width: 60%;
+      padding: 1.2rem;
+      font-size: 1.1rem;
+    }
+  
+    .search-button {
+      padding: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+.course-grid{
+    padding: 30px;
 }
-html,body {
-width: 100%;
-height: 100%;
-background-color: yellow;
+
+.buyers{
+    display: none;
 }
+    /* !!!!!!!!!!!!!!!!===================> */
+
+    .course-card {
+        padding: 10px;
+      }
+    
+      .instructor img {
+        width: 35px;
+        height: 35px;
+      }
+    
+      .instructor-name {
+        font-size: 0.9rem;
+      }
+    
+      .instructor-qualification {
+        font-size: 0.7rem;
+      }
+    
+      .add-to-cart, .buy-now {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+      }
+  }
+  
