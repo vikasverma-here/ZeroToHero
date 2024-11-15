@@ -120,6 +120,7 @@ color: white;
   font-weight: 900;
     font-weight: bold;  /* Make headings bold */
     line-height: 1.4;
+    color: #00FFFF;
 }
 
 /* Styling the paragraph */
@@ -127,6 +128,7 @@ color: white;
     font-size: 1.2em;
     margin: 20px 0;  /* Space above and below the paragraph */
     line-height: 1.6;
+    
     
 }
 
@@ -367,12 +369,14 @@ display: inline-block;
 .article-content>h2{
   color: #4CAF50;
   font-weight: 800;
+  
 }
 
 .heading-part>h2{
   color:#4CAF50 ;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 900;
+  border-bottom: 4px solid green;
 }
 
 
