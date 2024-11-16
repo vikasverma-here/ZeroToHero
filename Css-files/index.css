@@ -17,7 +17,7 @@ color: white;
   margin-inline: auto;
   font-weight: 700;
   
-  /* border: 1px solid white; */
+ 
 }
 
 /* !!!!!!header start here ========================================> */
@@ -106,66 +106,69 @@ color: white;
 .hero-section{
   padding-top: 15vh;
 }
-/* Hero Section Styling */
+
 .hero-section-content {
-    /* background-color: #000;  Black background */
-    color: #fff;  /* White text color for contrast */
-    text-align: center;  /* Center-align the content */
-    padding: 50px 20px;  /* Add padding for spacing */
+   
+    color: #fff; 
+    text-align: center; 
+    padding: 50px 20px; 
 }
 
-/* Styling the heading */
+
 .hero-section-content h2 {
-    font-size: 4em;  /* Large font size */
+    font-size: 4em;  
   font-weight: 900;
-    font-weight: bold;  /* Make headings bold */
+    font-weight: bold;  
     line-height: 1.4;
     color: #00FFFF;
 }
 
-/* Styling the paragraph */
+
 .hero-section-content p {
     font-size: 1.2em;
-    margin: 20px 0;  /* Space above and below the paragraph */
+    margin: 20px 0;  
     line-height: 1.6;
     
     
 }
 
-/* Button Styling */
+
 .hero-section-content .btn {
-    background-color: #007BFF;  /* Blue background for buttons */
-    color: #fff;  /* White text color */
-    border: none;  /* Remove default border */
-    padding: 12px 30px;  /* Add padding */
-    margin: 10px;  /* Space between buttons */
+    background-color: #007BFF;  
+    color: #fff;  
+    border: none;  
+    padding: 12px 30px;  
+    margin: 10px;  
     font-size: 16px;
-    border-radius: 5px;  /* Rounded corners */
+    border-radius: 5px;  
     cursor: pointer;
-    transition: background-color 0.3s ease;  /* Smooth hover effect */
+    transition: background-color 0.3s ease;  
 }
 
-/* Button Hover Effect */
+
 .hero-section-content .btn:hover {
-    background-color: #0056b3;  /* Darker blue on hover */
+    background-color: #0056b3;  
 }
 
-/* Styling the additional paragraph */
+
 .hero-section-content p:last-of-type {
     font-size: 16px;
     font-weight: normal;
-    color: #ccc;  /* Light grey for the small text */
+    color: #ccc;  
     margin-top: 20px;
 }
 
 /* ==============================================================> */
-
+.heading-part>h1{
+  color: #00FFFF;
+  border-bottom: 2px solid #00FFFF;
+  padding-bottom: 10px;
+}
 .page-6{
-  /* height: 100%; */
+
   width: 100%;
   margin: 3vh 0;
-  /* border: 1px solid yellow; */
-  /* background-color: gray; */
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -183,10 +186,9 @@ to{
 
 .page-6>.logos{
   height: 22%;
-  /* width: 100%; */
-  /* border: 1px solid black; */
+
   padding: 2vw 0;
-  /* background-color: wheat; */
+
   white-space: nowrap;
  overflow-x: hidden;
 
@@ -237,6 +239,10 @@ display: inline-block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   text-align: center;
+}
+
+.cart1 a{
+  color: #00FFFF;
 }
 
 .cart1:hover {
@@ -302,10 +308,7 @@ display: inline-block;
 
 /* !!!============================ */
 
-/* General styling for the body */
 
-
-/* Container for the articles */
 .articles-container {
   width: 100%;
   max-width: 1200px;
@@ -313,55 +316,55 @@ display: inline-block;
   padding: 20px;
 }
 
-/* Styling for each article */
+
 .article {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  background-color: #1e1e1e; /* Dark card background */
+  background-color: #1e1e1e; 
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
   overflow: hidden;
 }
 
-/* Styling for article images */
+
 .article-image {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-bottom: 2px solid #333; /* Dark border */
+  border-bottom: 2px solid #333; 
 }
 
-/* Content section of the article */
+
 .article-content {
   padding: 20px;
 }
 
-/* Title of the article */
+
 .article-content h2 {
   font-size: 24px;
-  color: #e0e0e0; /* Light title text */
+  color: #e0e0e0; 
   margin-bottom: 10px;
 }
 
-/* Paragraph text for the article */
+
 .article-content p {
   font-size: 16px;
-  color: #b0b0b0; /* Lighter text for the body */
+  color: #b0b0b0; 
   margin-bottom: 20px;
 }
 
-/* Styling for the "Read more" link */
+
 .article-content a {
-  color: #4CAF50; /* Green color for links */
+  color: #4CAF50; 
   font-size: 16px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-/* Hover effect for the "Read more" link */
+
 .article-content a:hover {
-  color: #81C784; /* Lighter green on hover */
+  color: #81C784; 
 }
 
 /* Responsive Styles */
@@ -397,7 +400,7 @@ footer {
   margin: 0 auto;
 }
 
-/* Footer Section Styling */
+
 .footer-section {
   flex: 1;
   min-width: 220px;
@@ -456,34 +459,127 @@ footer {
 }
 
 /* Footer Bottom Section */
-.footer-bottom {
-  margin-top: 40px;
+footer {
   background-color: #111;
-  padding: 15px 0;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 22%;
+  padding: 1rem;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #27ae60;
+}
+
+.social-media .social-icons a {
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-form {
+  width: 100%;
+  padding: 1rem;
+  background-color: #222;
+  border-radius: 8px;
+}
+
+.contact-form h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #1e8449;
+}
+
+.footer-bottom {
+  background-color: #111;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 .footer-bottom ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
   list-style: none;
   padding: 0;
 }
 
 .footer-bottom ul li {
-  font-size: 1em;
+  display: inline;
+  margin: 0 10px;
 }
 
 .footer-bottom ul li a {
-  color: #ddd;
+  color: #aaa;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
 }
 
 .footer-bottom ul li a:hover {
-  color: #fff;
+  color: #27ae60;
 }
+
+
 
 
 
@@ -508,7 +604,7 @@ footer {
 
 
   
-  /* Mobile Screens (up to 767px) */
+
   @media (max-width: 767px) {
     .navbar {
       
@@ -534,7 +630,7 @@ footer {
 
   
     .nav-links {
-      display: none; /* Hide the links initially on mobile */
+      display: none; 
       flex-direction: column;
       width: 100%;
       margin-top: 1rem;
@@ -557,7 +653,7 @@ footer {
     }
   
     .navbar.open .nav-links {
-      display: flex; /* Display links when menu is open */
+      display: flex; 
     }
 
 
@@ -583,27 +679,26 @@ footer {
     /* ===========================> */
 
     .articles-container {
-      padding: 10px; /* Less padding on smaller screens */
+      padding: 10px; 
   }
 
-  /* Article card adjustments */
+ 
   .article {
-      margin-bottom: 20px; /* Less margin for smaller screens */
+      margin-bottom: 20px; 
   }
 
   .article-content h2 {
-      font-size: 20px; /* Smaller title size */
+      font-size: 20px; 
   }
 
   .article-content p {
-      font-size: 14px; /* Smaller paragraph text */
+      font-size: 14px; 
   }
 
   .article-content a {
-      font-size: 14px; /* Smaller link text */
+      font-size: 14px; 
   }
 
-  /* Stack articles vertically in smaller screens */
   .articles-container {
       display: block;
   }
@@ -626,10 +721,25 @@ footer {
     align-items: center;
   }
   
+  .footer-section {
+    width: 48%;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.footer-bottom ul {
+    display: block;
+}
+
+.footer-bottom ul li {
+    margin: 5px 0;
+}
 
   }
   
-  /* Tablet Screens (768px to 1023px) */
+
   @media (min-width: 768px) and (max-width: 1023px) {
     .navbar {
       flex-direction: row;
@@ -658,7 +768,7 @@ footer {
     }
   }
   
-  /* Desktop Screens (1024px and above) */
+ 
   @media (min-width: 1024px) {
     .navbar {
       flex-direction: row;

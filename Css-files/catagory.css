@@ -1,24 +1,24 @@
-/* General Reset */
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black; /* Black background */
-    color: white; /* White text */
+    background-color: black; 
+    color: white; 
     line-height: 1.6;
   }
   
-  /* Section Styling */
+
   .category-section {
     padding: 20px;
     margin: 20px auto;
     max-width: 1200px;
-    border-bottom: 1px solid #444; /* Section Divider */
+    border-bottom: 1px solid #444;
   }
   
   .category-section h1 {
     font-size: 2rem;
-    color: #00c1ff; /* Accent color for section titles */
+    color: #00c1ff; 
     text-align: center;
     margin-bottom: 15px;
   }
@@ -27,10 +27,10 @@ body {
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #ccc; /* Softer white for text */
+    color: #ccc; 
   }
   
-  /* Card Container */
+ 
   .category-content {
     display: flex;
     flex-wrap: wrap;
@@ -38,9 +38,9 @@ body {
     gap: 20px;
   }
   
-  /* Individual Card */
+ 
   .card {
-    background: #222; /* Dark gray for card background */
+    background: #222; 
     border: 1px solid #333;
     border-radius: 10px;
     padding: 20px;
@@ -51,26 +51,26 @@ body {
   }
   
   .card:hover {
-    transform: translateY(-10px); /* Slight lift on hover */
+    transform: translateY(-10px); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
   }
   
   .card h2 {
     font-size: 1.5rem;
-    color: #f0a500; /* Highlight for card titles */
+    color: #f0a500; 
     margin-bottom: 10px;
   }
   
   .card p {
     font-size: 1rem;
-    color: #ddd; /* Softer white for text */
+    color: #ddd;
     margin-bottom: 15px;
   }
   
   .card a {
     display: inline-block;
     font-size: 0.9rem;
-    color: #00c1ff; /* Link color */
+    color: #00c1ff; 
     text-decoration: none;
     padding: 5px 10px;
     border: 1px solid #00c1ff;
@@ -88,7 +88,7 @@ body {
 
   /* Footer Styling */
 .site-footer {
-    background-color: #111; /* Darker black */
+    background-color: #111; 
     color: white;
     padding: 30px 20px;
     font-size: 0.9rem;
@@ -111,11 +111,11 @@ body {
   .footer-section h3 {
     font-size: 1.3rem;
     margin-bottom: 15px;
-    color: #00c1ff; /* Accent color */
+    color: #00c1ff; 
   }
   
   .footer-section p {
-    color: #ccc; /* Softer white */
+    color: #ccc; 
     line-height: 1.6;
   }
   
@@ -135,7 +135,7 @@ body {
   }
   
   .footer-section ul li a:hover {
-    color: #f0a500; /* Hover color for links */
+    color: #f0a500; 
   }
   
   .social-links a {
@@ -150,7 +150,7 @@ body {
     color: #f0a500;
   }
   
-  /* Footer Bottom Section */
+ 
   .footer-bottom {
     text-align: center;
     margin-top: 20px;
@@ -159,7 +159,7 @@ body {
     color: #ccc;
   }
   
-  /* Responsive Design for Footer */
+
   @media (max-width: 768px) {
     .footer-content {
       flex-direction: column;
@@ -177,7 +177,7 @@ body {
   }
   
 
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     .category-content {
       flex-direction: column;
@@ -185,7 +185,7 @@ body {
     }
   
     .card {
-      width: 90%; /* Take most of the viewport width on small screens */
+      width: 90%; 
     }
   }
   
